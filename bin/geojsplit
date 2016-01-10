@@ -216,6 +216,9 @@ function inputGeoJSON(filename) {
                         }
                     }
                 }
+                else {
+                    outputGeoJSON(geometries, file, fileCount);
+                }
             });
 
     stream.pipe(jsonStream);
